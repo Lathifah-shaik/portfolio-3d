@@ -1,0 +1,116 @@
+🧑‍💻 Personal 3D Portfolio Website
+A visually captivating, fully responsive personal portfolio built using HTML, CSS, and JavaScript, featuring a custom 3D model embedded using Three.js. Designed to showcase projects, skills, and contact information in a seamless, interactive user experience.
+
+🌐 Live Demo
+🔗 View Website
+(Add your deployed site URL here once live)
+
+🚀 Features
+🎨 Sleek, responsive design for desktop and mobile
+
+🧩 3D model integration via Three.js or Spline
+
+🧑‍💼 About section with tabbed skills interface
+
+🛠️ Dynamic project showcase with hover effects
+
+📬 Contact form with input styling and validation
+
+🌙 Dark-themed UI with vibrant highlight accents
+
+📱 Mobile menu toggle with icon-based navigation
+
+📁 Folder Structure
+bash
+Copy
+Edit
+portfolio/
+│
+├── index.html
+├── /css
+│   └── style.css
+├── /js
+│   └── script.js
+├── /images
+│   └── myherobackground.png
+│   └── hero-mobile.png...
+
+⚙️ Technologies Used
+HTML5 – semantic structure
+
+CSS3 – responsive layout with media queries
+
+JavaScript (Vanilla) – interactivity and animation triggers
+
+Three.js – 3D model rendering in browser
+
+Spline (Optional) – Web-based 3D viewer integration (fallback option)
+
+📦 How to Run Locally
+Clone the Repo
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+Install Live Server (or use any HTTP server)
+
+bash
+Copy
+Edit
+npm install -g live-server
+live-server
+Alternatively, just open index.html directly in a browser.
+
+🧠 Key Components
+Component	Description
+#header	Hero section with name, role, and 3D background
+.name	Custom-styled name with dynamic color on initial letter
+#about	Skills and bio in two-column responsive layout
+#projects	Grid-based project gallery with animated overlays
+#contact	Contact form with icons and social media links
+<canvas>	DOM node where Three.js renders the 3D scene
+three-canvas	Styled via CSS for proper scaling across devices
+
+🧪 Troubleshooting
+3D model not visible?
+✅ Confirm camera.position.z is set
+✅ Ensure lighting (DirectionalLight, AmbientLight) is added
+✅ Check the model path and file type (.glb/.gltf/.obj)
+
+Canvas not resizing?
+Use window.addEventListener('resize', ...) to auto-adjust renderer size.
+
+📱 Responsive Design
+Media queries optimize the layout for devices up to 768px. Mobile-specific tweaks include:
+
+Hamburger navigation menu with toggle icon
+
+Reduced font sizes and header image
+
+3D section height capped (60vh) to prevent scroll bloat
+
+📤 Deployment
+You can host it on:
+
+GitHub Pages
+
+Vercel / Netlify
+
+Firebase Hosting
+(HTML-only site with no build process can be deployed in seconds.)
+
+💡 Future Enhancements
+Integrate emailjs for real-time form submission
+
+Animate scroll with GSAP or ScrollReveal
+
+Add react-three-fiber version for dynamic UI
+
+Add dark/light theme toggle
+
+Enable lazy-loading for 3D assets
+
+📄 License
+MIT License – you’re free to use, modify, and distribute.

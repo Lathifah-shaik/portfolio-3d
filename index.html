@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <script src="https://kit.fontawesome.com/ca3c94ed46.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+    </head>
+    <body>
+        <div id="header">
+
+            <div class="container">
+                <nav>
+                    <h1 class="name">
+                        <span class="first-letter">L</span>athifah
+                    </h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-rectangle-xmark fas" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+                </nav>
+
+                <canvas id="three-canvas"></canvas>
+
+                <div class="header-text">
+                    <p>Fullstack Developer</p>
+                    <h1>Hi, I'm <span>Lathifah</span> Shaik<br>From India</h1>
+                </div>
+            </div>
+
+        </div>
+
+<!-----------------About----------------->
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/aboutuser.jpg" alt="about user" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p style="line-height: 1.6;">
+                            A passionate full-stack developer in the making, 
+                            currently pursuing a B.Tech in CSE and sharpening 
+                            industry-ready skills through NxtWave’s Full-Stack Development
+                            program. Specializes in building responsive, user-focused
+                            web apps using React, Node.js, and Python. Projects span 
+                            dashboards, games, and search tools—always with an eye for 
+                            clean UI and scalable code.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML / CSS</span><br>Designing static webpages</li>
+                                <li><span>Javascript</span><br>Developing Responsive webpages</li>
+                                <li><span>Python</span><br>Problem Solving</li>
+                                <li><span>React.JS</span><br>Designing Dynamic and Responsive pages with API integration</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2026</span><br> B-TECH From KKR & KSR INSTITUTE OF TECHNOLOGY AND SCIENCES</li>
+                                <li><span>2022</span><br>Intermediate at Sri Chaitanya Jr. College</li>
+                                <li><span>2020</span><br>Schooling at Sri Chaitanya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!----------------Projects--------------->
+
+        <section id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/ipl-dashboard.png" alt="project - 1"/>
+                        <div class="layer">
+                            <h3>Ipl Dashboard</h3>
+                            <p>
+                                Built an interactive hub for IPL teams and matches information. 
+                                Included a custom 404 page for non-existent routes. 
+                            </p>
+                            <a href="https://github.com/Lathifah-shaik/ipl-dashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/match-game.png" alt="project - 2"/>
+                        <div class="layer">
+                            <h3>Match Game</h3>
+                            <p>
+                                Built a fun Match Game using React.js, where players match 
+                                an image with the correct thumbnail before time runs out. 
+                            </p>
+                            <a href="https://github.com/Lathifah-shaik/match-game-image"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/emoji-game.png" alt="project - 3"/>
+                        <div class="layer">
+                            <h3>Emoji Game</h3>
+                            <p>
+                                Created an exciting memory game with unique emoji clicks and randomized placement. 
+                            </p>
+                            <a href="https://neeluemojigame.ccbp.tech/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </section>
+
+<!----------------Contact---------------->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Lathifah-shaik"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/lathifah-shaik/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Lathifah_latest_resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required />
+                            <input type="email" name="Email" placeholder="Your Email" required />
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>Copyrigt <i class="fa-regular fa-copyright"></i> Lathifah.</p>
+        </div>
+
+    <script src="js/script.js"></script>
+    </body>
+</html>
